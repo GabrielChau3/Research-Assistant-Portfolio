@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Chau | About Me</title>
+
+  <style>
+    :root {
+     --Blue: #004F71;
+    --navy: #10243a;
+      --Yellow: #FFF3B8;
+      --silver: #c0c0c0;
+      --white: #ffffff;
+      --black: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--Yellow);
+      outline-offset: 5px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 10;
+      padding: 0.75rem 1rem;
+      background: var(--Blue);
+      color: var(--navy);
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    .site-header {
+      background: var(--Blue);
+      color: var(--white);
+      border-bottom: 4px solid var(--Blue);
+    }
+
+    .navigation {
+      width: min(100% - 3rem, 1120px);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      flex-wrap: wrap;
+      padding-block: 1.25rem;
+    }
+
+    .brand {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.75rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding-block: 0.65rem;
+      border-bottom: 3px solid transparent;
+      color: var(--white);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--Yellow);
+    }
+
+    .nav-links a[aria-current="page"] {
+      border-bottom-color: var(--Yellow);
+      font-weight: 700;
+    }
+
+    main {
+      flex: 1;
+      width: min(100% - 3rem, 960px);
+      margin-inline: auto;
+      padding-block: clamp(3rem, 7vw, 6rem);
+    }
+
+    .section-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--Yellow);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--Blue);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      overflow-wrap: break-word;
+    }
+
+    .biography {
+      max-width: 72ch;
+      padding-left: clamp(1.25rem, 3vw, 2rem);
+      border-left: 2px solid var(--Yellow);
+    }
+
+    .biography p {
+      margin: 0 0 1.5rem;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+    }
+
+    .biography p:last-child {
+      margin-bottom: 0;
+    }
+
+    .site-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--silver);
+      color: var(--navy);
+      text-align: center;
+      font-size: 0.875rem;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 0.5rem 1.25rem;
+      }
+
+      .section-header {
+        margin-bottom: 2rem;
+      }
+
+      .biography p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html">Gabriel Chau</a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html" aria-current="page">About Me</a>
+        </li>
+        <li>
+          <a href="skills-projects.html">Skills &amp; Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="overview-heading">
+      <header class="section-header">
+        <h1 id="overview-heading">Professional Overview</h1>
+      </header>
+
+      <div class="biography">
+        <p>I am an Ottawa-based financial and data analyst who translates rapidly changing macroeconomic and financial datasets into clear, data-driven narratives. With a strong foundation in Commerce (BCom), active study of the CFA Level 1 curriculum, and a focus on high ethical standards and financial modelling, I incorporate practical analytics to support economic research, track market developments, and inform strategic policy decisions.</p>
+        <p>My technical skills bridge business theory and data management. I use visual tools like Power BI, Power Query, and Tableau to collect, clean, and visualize large-scale datasets. Aligning with the Bank's drive for an innovative, open-minded mindset, I integrate AI assistance and digital tools into my analytical work to improve data productivity and transformation, enhance process management analysis, and extract actionable economic insights with high precision.</p>
+        <p>To further strengthen my quantitative capabilities, I am completing the Business Intelligence & Data Analyst (BIDA) certification. Combined with my completion of the Canadian Securities Course (CSC), I possess a deeper understanding of equity markets, regulatory environments, and financial modelling, ensuring I can immediately contribute high-level value to the Bank of Canada’s core economic and financial analysis teams.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Gabriel Chau</p>
+  </footer>
+</body>
+</html>
